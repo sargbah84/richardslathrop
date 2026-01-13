@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-cream overflow-hidden">
+        <section
+            className="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-cream overflow-hidden bg-contain bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/assets/img/header-bg.jpg')" }}
+        >
             <div className="container mx-auto px-4 md:px-8 relative z-10">
                 <div className="max-w-4xl">
                     <span className="animate-hero-badge inline-block py-2 px-4 bg-navy text-white text-xs font-semibold tracking-widest uppercase mb-6 rounded-sm">
