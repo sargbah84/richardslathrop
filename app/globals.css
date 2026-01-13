@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Vanio Font */
+@font-face {
+  font-family: 'Vanio';
+  src: url('/assets/fonts/Vanio Trial-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: 'Vanio';
+  src: url('/assets/fonts/Vanio Trial-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'Vanio';
+  src: url('/assets/fonts/Vanio Trial-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Vanio';
+  src: url('/assets/fonts/Vanio Trial-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --color-navy: #1a2842;
+  --color-gold: #d4a574;
+  --color-cream: #faf8f5;
+  --color-white: #ffffff;
+
+  --font-vanio: 'Vanio', Georgia, serif;
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-navy);
+}
+
+/* Vanio font utility class */
+.font-vanio {
+  font-family: 'Vanio', Georgia, serif;
+}
+
+/* Apply Vanio to all headings by default */
+h1, h2, h3, h4 {
+  font-family: 'Vanio', Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Hero load animation */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-badge {
+  animation: heroFadeIn 0.6s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+.animate-hero-title {
+  animation: heroFadeIn 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.animate-hero-text {
+  animation: heroFadeIn 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+}
+
+.animate-hero-cta {
+  animation: heroFadeIn 0.8s ease-out 0.6s forwards;
+  opacity: 0;
 }

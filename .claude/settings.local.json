@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nBuild Richards, Lathrop & Associates wealth management website\n\n- Add all page sections: Hero, Comparison, Origin Story, Founders, Philosophy, Lineage, CTA, Footer\n- Implement scroll-triggered animations with custom AnimateOnScroll component and useScrollAnimation hook\n- Integrate Vanio custom font for headings with Georgia fallback\n- Add responsive header with fixed navigation\n- Configure Tailwind CSS v4 with custom color theme \\(navy, gold, cream\\)\n- Update README with project documentation\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
