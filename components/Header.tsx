@@ -33,6 +33,9 @@ export default function Header() {
                     <Link href="#founders" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
                         The Founders
                     </Link>
+                    <Link href="/services" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
+                        Services
+                    </Link>
                     <Link href="#approach" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
                         Our Approach
                     </Link>
@@ -79,6 +82,13 @@ export default function Header() {
                         onClick={closeMenu}
                     >
                         The Founders
+                    </Link>
+                    <Link
+                        href="/services"
+                        className="text-base font-medium tracking-wide text-navy hover:text-gold transition-colors py-2"
+                        onClick={closeMenu}
+                    >
+                        Services
                     </Link>
                     <Link
                         href="#approach"

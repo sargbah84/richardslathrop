@@ -28,11 +28,12 @@ export default function Footer() {
                     <div className="space-y-6">
                         <h4 className="text-gold text-sm font-bold tracking-widest uppercase">Services</h4>
                         <ul className="space-y-3 text-sm text-gray-300">
-                            <li><Link href="#" className="hover:text-gold transition-colors">Wealth Management</Link></li>
-                            <li><Link href="#" className="hover:text-gold transition-colors">Portfolio Construction</Link></li>
-                            <li><Link href="#" className="hover:text-gold transition-colors">Tax Optimization</Link></li>
-                            <li><Link href="#" className="hover:text-gold transition-colors">Estate Planning</Link></li>
-                            <li><Link href="#" className="hover:text-gold transition-colors">Succession Planning</Link></li>
+                            <li><Link href="/services#financial-planning" className="hover:text-gold transition-colors">Financial Planning</Link></li>
+                            <li><Link href="/services#tax-optimization" className="hover:text-gold transition-colors">Tax Optimization</Link></li>
+                            <li><Link href="/services#asset-protection" className="hover:text-gold transition-colors">Asset Protection</Link></li>
+                            <li><Link href="/services#estate-planning" className="hover:text-gold transition-colors">Estate Planning</Link></li>
+                            <li><Link href="/services#philanthropic-giving" className="hover:text-gold transition-colors">Philanthropic Giving</Link></li>
+                            <li><Link href="/services#investment-management" className="hover:text-gold transition-colors">Investment Management</Link></li>
                         </ul>
                     </div>
 
