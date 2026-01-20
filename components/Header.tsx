@@ -13,12 +13,12 @@ export default function Header() {
         <header className="fixed top-0 left-0 right-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
             <div className="container mx-auto px-4 md:px-8 h-20 flex items-center justify-between">
                 <Link href="/" className="flex items-center">
-                    <div className="relative h-12 w-48">
+                    <div className="relative h-14 w-56">
                         <Image
                             src="/assets/img/logo.png"
                             alt="Richards, Lathrop &amp; Associates"
                             fill
-                            sizes="192px"
+                            sizes="224px"
                             className="object-contain object-left"
                             priority
                         />
@@ -27,17 +27,14 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
-                    <Link href="#story" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
+                    <Link href="/story" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
                         Our Story
                     </Link>
-                    <Link href="#founders" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
-                        The Founders
+                    <Link href="/team" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
+                        Our Team
                     </Link>
                     <Link href="/services" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
                         Services
-                    </Link>
-                    <Link href="#approach" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
-                        Our Approach
                     </Link>
                     <Link href="#contact" className="px-6 py-2 bg-navy text-white text-sm font-medium tracking-wide hover:bg-gold transition-colors">
                         Work With Us
@@ -70,18 +67,18 @@ export default function Header() {
             >
                 <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
                     <Link
-                        href="#story"
+                        href="/story"
                         className="text-base font-medium tracking-wide text-navy hover:text-gold transition-colors py-2"
                         onClick={closeMenu}
                     >
                         Our Story
                     </Link>
                     <Link
-                        href="#founders"
+                        href="/team"
                         className="text-base font-medium tracking-wide text-navy hover:text-gold transition-colors py-2"
                         onClick={closeMenu}
                     >
-                        The Founders
+                        Our Team
                     </Link>
                     <Link
                         href="/services"
@@ -89,13 +86,6 @@ export default function Header() {
                         onClick={closeMenu}
                     >
                         Services
-                    </Link>
-                    <Link
-                        href="#approach"
-                        className="text-base font-medium tracking-wide text-navy hover:text-gold transition-colors py-2"
-                        onClick={closeMenu}
-                    >
-                        Our Approach
                     </Link>
                     <Link
                         href="#contact"

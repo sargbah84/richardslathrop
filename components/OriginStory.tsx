@@ -26,13 +26,25 @@ export default function OriginStory() {
 
                     <AnimateOnScroll animation="fadeUp" delay={200}>
                         <div className="aspect-video bg-black/30 rounded-lg overflow-hidden">
-                            <ReactPlayer
-                                url={videoUrl}
-                                width="100%"
-                                height="100%"
-                                controls
-                                playing={false}
-                            />
+                            {videoUrl ? (
+                                <ReactPlayer
+                                    url={videoUrl}
+                                    width="100%"
+                                    height="100%"
+                                    controls
+                                    playing={false}
+                                />
+                            ) : (
+                                <div className="w-full h-full flex items-center justify-center bg-navy/50">
+                                    <div className="text-center text-gray-400">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 mx-auto mb-4">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                                        </svg>
+                                        <p className="text-lg font-medium">Video Coming Soon</p>
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </AnimateOnScroll>
                 </div>
