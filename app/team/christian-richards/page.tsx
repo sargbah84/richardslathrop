@@ -9,7 +9,7 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function ChristianRichards() {
     const [currentImage, setCurrentImage] = useState(0);
-    const videoUrl = "";
+    const videoUrl: string | null = null;
 
     const images = [
         "/assets/img/chris1a.JPG",
