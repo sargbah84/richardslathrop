@@ -1,15 +1,6 @@
-"use client";
-
-import dynamic from "next/dynamic";
 import AnimateOnScroll from "./AnimateOnScroll";
 
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
-
 export default function OriginStory() {
-    // Supports YouTube URLs (e.g., "https://www.youtube.com/watch?v=VIDEO_ID")
-    // or MP4 files (e.g., "/videos/intro.mp4" or "https://example.com/video.mp4")
-    const videoUrl: string | null = null;
-
     return (
         <section id="story" className="py-24 bg-navy text-white">
             <div className="container mx-auto px-4 md:px-8">
@@ -26,25 +17,15 @@ export default function OriginStory() {
 
                     <AnimateOnScroll animation="fadeUp" delay={200}>
                         <div className="aspect-video bg-black/30 rounded-lg overflow-hidden">
-                            {videoUrl ? (
-                                <ReactPlayer
-                                    url={videoUrl}
-                                    width="100%"
-                                    height="100%"
-                                    controls
-                                    playing={false}
-                                />
-                            ) : (
-                                <div className="w-full h-full flex items-center justify-center bg-navy/50">
-                                    <div className="text-center text-gray-400">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 mx-auto mb-4">
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
-                                        </svg>
-                                        <p className="text-lg font-medium">Video Coming Soon</p>
-                                    </div>
+                            <div className="w-full h-full flex items-center justify-center bg-navy/50">
+                                <div className="text-center text-gray-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 mx-auto mb-4">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                                    </svg>
+                                    <p className="text-lg font-medium">Video Coming Soon</p>
                                 </div>
-                            )}
+                            </div>
                         </div>
                     </AnimateOnScroll>
                 </div>

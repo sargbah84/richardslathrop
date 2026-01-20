@@ -2,14 +2,10 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { useState } from "react";
-
-const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 
 export default function ChristianRichards() {
     const [currentImage, setCurrentImage] = useState(0);
-    const videoUrl: string | null = null;
 
     const images = [
         "/assets/img/chris1a.JPG",
@@ -51,25 +47,15 @@ export default function ChristianRichards() {
                         <div className="mb-16">
                             <h2 className="font-vanio text-2xl text-navy mb-6">Meet Christian</h2>
                             <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
-                                {videoUrl ? (
-                                    <ReactPlayer
-                                        url={videoUrl}
-                                        width="100%"
-                                        height="100%"
-                                        controls
-                                        playing={false}
-                                    />
-                                ) : (
-                                    <div className="w-full h-full flex items-center justify-center bg-gray-200">
-                                        <div className="text-center text-gray-500">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 mx-auto mb-4">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
-                                            </svg>
-                                            <p className="text-lg font-medium">Video Coming Soon</p>
-                                        </div>
+                                <div className="w-full h-full flex items-center justify-center bg-gray-200">
+                                    <div className="text-center text-gray-500">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 mx-auto mb-4">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                                        </svg>
+                                        <p className="text-lg font-medium">Video Coming Soon</p>
                                     </div>
-                                )}
+                                </div>
                             </div>
                         </div>
 
