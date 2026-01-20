@@ -5,22 +5,22 @@ export default function Philosophy() {
         {
             number: "01",
             title: "Strong Relationships",
-            description: "We begin with a profound understanding of you—not just your finances, but your aspirations, fears, and family dynamics. These partnerships bridge generations through fluid wealth transitions and flexible frameworks that adapt as your life evolves."
+            description: "We begin with a profound understanding of you—not just your finances, but your aspirations, fears, and family dynamics. This ensures that the strategies we employ are the best possible fit for your family as your life evolves, paving the way for a seamless transition to the next generation."
         },
         {
             number: "02",
             title: "True Client Alignment",
-            description: "Our ownership structure and incentives are anchored in your long-term prosperity, not quarterly sales targets. We designed this firm from the ground up to ensure your success is our only metric that matters."
+            description: "Our ownership structure and incentives are anchored in your long-term prosperity, not quarterly sales targets. We designed this firm from the ground up to ensure that your success is our only metric that matters."
         },
         {
             number: "03",
             title: "Excellence in Service",
-            description: "Financial matters shouldn't keep you up at night. We assume that burden entirely, remaining accessible during market volatility and life transitions, so you can focus on living while we handle the complexity."
+            description: "Financial matters shouldn't keep you up at night. We assume that burden entirely. By remaining accessible during periods of market volatility and life transitions, you can focus on living while we handle the complexities of wealth."
         },
         {
             number: "04",
             title: "Deep Technical Expertise",
-            description: "While markets fluctuate unpredictably, taxation and strategic planning offer real control over outcomes. Our specialized knowledge in portfolio construction, tax optimization, estate planning, and trust architecture creates measurable advantages."
+            description: "While markets fluctuate unpredictably, taxation and strategic planning offer real control over outcomes. Our specialized knowledge in portfolio construction, tax optimization, estate planning, and trust architecture provides a level of predictability and control in a world of uncertainty."
         }
     ];
 

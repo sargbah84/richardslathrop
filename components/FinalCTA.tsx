@@ -15,7 +15,7 @@ export default function FinalCTA() {
                 </AnimateOnScroll>
                 <AnimateOnScroll animation="scaleIn" delay={300}>
                     <Link
-                        href="#"
+                        href="tel:323-426-7003"
                         className="inline-block px-12 py-5 bg-gold text-navy font-medium text-lg tracking-wide hover:bg-white transition-colors rounded-sm"
                     >
                         Schedule Your First Conversation

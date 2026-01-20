@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 export default function Founders() {
@@ -16,7 +17,7 @@ export default function Founders() {
                         <AnimateOnScroll animation="fadeRight" className="w-full md:w-2/5 flex justify-center md:justify-start">
                             <div className="relative w-full h-[500px] shadow-2xl rounded-lg overflow-hidden">
                                 <Image
-                                    src="/assets/img/chris.png"
+                                    src="/assets/img/chris1a.jpg"
                                     alt="Christian P. Richards III"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 40vw"
@@ -26,7 +27,7 @@ export default function Founders() {
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeLeft" delay={200} className="w-full md:w-3/5">
                             <h3 className="font-vanio text-3xl text-navy mb-2">Christian P. Richards III</h3>
-                            <p className="text-gold font-medium uppercase tracking-widest text-sm mb-6">Co-Founder & Senior Wealth Advisor</p>
+                            <p className="text-gold font-medium uppercase tracking-widest text-sm mb-6">President</p>
 
                             <div className="bg-cream p-6 border-l-4 border-gold mb-6 italic text-gray-600">
                                 &ldquo;From answering phones and scanning documents to building a firm that changes lives—my journey proves that integrity and hard work matter more than pedigree.&rdquo;
@@ -39,9 +40,9 @@ export default function Founders() {
                                 <p>
                                     Within 18 months, he earned tax, insurance, and securities licenses. But unlike the advisors who dismissed him as a rookie, Christian never forgot his purpose: to serve those who need help most, not just chase high-net-worth clients.
                                 </p>
-                                <p>
-                                    Under the mentorship of David Meltzer and Jim Regitz, Christian learned that elite service means putting clients first, maintaining ethical conduct, and actually caring about outcomes. For the past seven years, he&apos;s served clients as a Senior Wealth Advisor, building lasting relationships that span generations.
-                                </p>
+                                <Link href="/team/christian-richards" className="inline-block mt-4 px-8 py-4 bg-navy text-white font-medium tracking-wide hover:bg-gold transition-colors rounded-sm">
+                                    Read Full Bio
+                                </Link>
                             </div>
                         </AnimateOnScroll>
                     </div>
@@ -50,28 +51,25 @@ export default function Founders() {
                     <div className="flex flex-col md:flex-row items-start gap-12">
                         <AnimateOnScroll animation="fadeRight" delay={200} className="w-full md:w-3/5 order-2 md:order-1">
                             <h3 className="font-vanio text-3xl text-navy mb-2">Michael Lathrop</h3>
-                            <p className="text-gold font-medium uppercase tracking-widest text-sm mb-6">Principal & Chief Investment Officer</p>
+                            <p className="text-gold font-medium uppercase tracking-widest text-sm mb-6">Chief Investment Officer</p>
 
                             <div className="bg-cream p-6 border-l-4 border-gold mb-6 italic text-gray-600">
-                                &ldquo;True expertise means building portfolios from the ground up, understanding global markets and tax implications, not just selecting pre-packaged funds.&rdquo;
+                                &ldquo;We recognize that success is built on the combination of disciplined investment processes that are tailored to fit the specific needs and preferences of clients rather than a detached and distant decisionmaker. While market volatility will remain constant, and one trend gives way to another, we work to provide you with structure and confidence that you will achieve your financial goals.&rdquo;
                             </div>
 
                             <div className="space-y-4 text-gray-600 leading-relaxed">
                                 <p>
-                                    Michael brings 14+ years of investment management expertise and the discipline of a United States Marine Corps veteran to every client relationship. His technical mastery of portfolio construction sets him apart in an industry full of salespeople pretending to be advisors.
+                                    With over 14 years of experience in investment management, he specializes in constructing multi-asset portfolios and has led the creation and management of specialty strategies focused on current income and aggressive growth. Michael has also managed strategies for a diverse range of mandates and clients, including high-net-worth individuals and institutions.
                                 </p>
-                                <p>
-                                    Holding the CIMA® and AIF® designations, along with a Master of Taxation from Villanova Law School, Michael doesn&apos;t just manage investments—he optimizes them through the lens of tax efficiency, a critical advantage most advisors overlook.
-                                </p>
-                                <p>
-                                    His approach combines deep knowledge of global capital markets with an intellectual curiosity that finds insights at the intersection of seemingly unrelated disciplines. He&apos;s not just managing your money; he&apos;s architecting comprehensive strategies for multigenerational wealth.
-                                </p>
+                                <Link href="/team/michael-lathrop" className="inline-block mt-4 px-8 py-4 bg-navy text-white font-medium tracking-wide hover:bg-gold transition-colors rounded-sm">
+                                    Read Full Bio
+                                </Link>
                             </div>
                         </AnimateOnScroll>
                         <AnimateOnScroll animation="fadeLeft" className="w-full md:w-2/5 order-1 md:order-2 flex justify-center md:justify-end">
                             <div className="relative w-full h-[500px] shadow-2xl rounded-lg overflow-hidden">
                                 <Image
-                                    src="/assets/img/mike.png"
+                                    src="/assets/img/mike1a.jpg"
                                     alt="Michael Lathrop"
                                     fill
                                     sizes="(max-width: 768px) 100vw, 40vw"
