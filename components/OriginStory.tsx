@@ -8,7 +8,7 @@ const ReactPlayer = dynamic(() => import("react-player"), { ssr: false });
 export default function OriginStory() {
     // Supports YouTube URLs (e.g., "https://www.youtube.com/watch?v=VIDEO_ID")
     // or MP4 files (e.g., "/videos/intro.mp4" or "https://example.com/video.mp4")
-    const videoUrl = "";
+    const videoUrl: string | null = null;
 
     return (
         <section id="story" className="py-24 bg-navy text-white">
