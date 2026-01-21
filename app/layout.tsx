@@ -19,8 +19,7 @@ export const metadata: Metadata = {
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-
-// ... imports
+import FormCRS from "@/components/FormCRS";
 
 export default function RootLayout({
   children,
@@ -35,6 +34,7 @@ export default function RootLayout({
         <Header />
         <main className="w-full min-w-full">{children}</main>
         <Footer />
+        <FormCRS />
       </body>
     </html>
   );

@@ -21,22 +21,24 @@ export default function Team() {
 
     const teamMembers = [
         {
-            name: "Sarah Mitchell",
-            title: "Director of Client Services",
-            image: "/assets/img/placeholder-team.jpg",
-            bio: "Sarah brings over a decade of experience in client relationship management, ensuring every client receives personalized attention and exceptional service throughout their wealth management journey."
+            name: "Tonya Collier, CFP®",
+            title: "Acting Principal",
+            image: "/assets/img/tonya.jpg"
         },
         {
-            name: "David Chen",
-            title: "Senior Financial Analyst",
-            image: "/assets/img/placeholder-team.jpg",
-            bio: "David's analytical expertise and attention to detail help drive data-informed investment decisions, with a focus on identifying opportunities that align with each client's unique financial goals."
+            name: "Jason Werner, CFP®",
+            title: "Principal Support",
+            image: "/assets/img/jason.jpg"
         },
         {
-            name: "Jennifer Torres",
-            title: "Estate Planning Specialist",
-            image: "/assets/img/placeholder-team.jpg",
-            bio: "Jennifer specializes in crafting comprehensive estate plans that protect wealth across generations, combining technical expertise with a deep understanding of family dynamics."
+            name: "Tara Kline",
+            title: "Transition Specialist",
+            image: "/assets/img/tara.jpg"
+        },
+        {
+            name: "Lisa Mirfakhrai",
+            title: "Senior Business Development Officer",
+            image: "/assets/img/lisa.jpg"
         }
     ];
 
@@ -100,20 +102,21 @@ export default function Team() {
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="max-w-6xl mx-auto">
                         <h2 className="font-vanio text-3xl text-navy mb-12 text-center">Our Team</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                             {teamMembers.map((member, index) => (
                                 <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                                    <div className="relative h-64 bg-gray-200">
-                                        <div className="w-full h-full flex items-center justify-center">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1} stroke="currentColor" className="w-24 h-24 text-gray-400">
-                                                <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                                            </svg>
-                                        </div>
+                                    <div className="relative h-48">
+                                        <Image
+                                            src={member.image}
+                                            alt={member.name}
+                                            fill
+                                            sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
+                                            className="object-cover object-top"
+                                        />
                                     </div>
-                                    <div className="p-6">
-                                        <h3 className="font-vanio text-xl text-navy mb-1">{member.name}</h3>
-                                        <p className="text-gold font-medium uppercase tracking-widest text-xs mb-4">{member.title}</p>
-                                        <p className="text-gray-600 leading-relaxed text-sm">{member.bio}</p>
+                                    <div className="p-6 text-center">
+                                        <h3 className="font-vanio text-lg text-navy mb-1">{member.name}</h3>
+                                        <p className="text-gold font-medium uppercase tracking-widest text-xs">{member.title}</p>
                                     </div>
                                 </div>
                             ))}
