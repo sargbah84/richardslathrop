@@ -43,7 +43,7 @@ export default function ChristianRichards() {
             <section className="py-16 bg-white">
                 <div className="container mx-auto px-4 md:px-8">
                     <div className="max-w-6xl mx-auto">
-                        {/* Video Section */}
+{/* Video Section - commented out
                         <div className="mb-16">
                             <h2 className="font-vanio text-2xl text-navy mb-6">Meet Christian</h2>
                             <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden shadow-lg">
@@ -58,6 +58,7 @@ export default function ChristianRichards() {
                                 </div>
                             </div>
                         </div>
+                        */}
 
                         {/* Content Row: Carousel + Bio */}
                         <div className="flex flex-col lg:flex-row gap-12">
