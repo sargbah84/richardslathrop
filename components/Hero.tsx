@@ -12,10 +12,10 @@ export default function Hero() {
                         Independently Owned
                     </span>
                     <h1 className="animate-hero-title font-vanio text-5xl md:text-7xl leading-tight text-navy mb-8">
-                        When Everyone Goes Right, We Go Left
+                        Independent Guidance for Timeless Success
                     </h1>
                     <p className="animate-hero-text text-lg md:text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
-                        We&apos;re not another corporate wealth management firm. We&apos;re two professionals who saw how broken the industry had become—and decided to build something better. No sales quotas. No corporate priorities. Just you, your family, and a partnership built to last generations.
+                        Discover Richards, Lathrop &amp; Associates, your independently owned boutique partner in wealth management, committed solely to your enduring prosperity. By integrating cutting-edge technology with our insight into financial planning, tax optimization, and investment strategies, we illuminate opportunities and provide steadfast support tailored to your vision.
                     </p>
                     <div className="animate-hero-cta flex flex-col sm:flex-row gap-4">
                         <Link

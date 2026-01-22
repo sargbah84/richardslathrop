@@ -46,13 +46,10 @@ export default function OurStory() {
                     <div className="max-w-4xl mx-auto">
                         <div className="prose prose-lg max-w-none text-gray-600 leading-relaxed space-y-6">
                             <p>
-                                In an industry often driven by aggressive sales targets and corporate priorities, we chose a path of unwavering integrity. This is why Richards, Lathrop and Associates was established: a boutique wealth management firm singularly dedicated to your prosperity, not institutional agendas. Rather than aligning with established entities hampered by administrative hurdles and conflicting priorities, we forged our own firm to provide bespoke, enduring counsel that extends across decades and generations.
+                                In a financial landscape rife with rapid changes, fragmented services, mounting complexity, and short-term thinking, we recognized the profound challenges of feeling overwhelmed, underserved, and disconnected from holistic guidance. This inspired the creation of Richards, Lathrop &amp; Associates: an independently owned boutique wealth management firm singularly dedicated to your prosperity, weaving seamless, enduring strategies with uncompromised integrity and client-first dedication to navigate life&apos;s intricacies and foster harmony across generations.
                             </p>
                             <p>
-                                At our foundation lies a guiding principle: We develop tailored strategies attuned to your distinct objectives, steering you toward sustained achievement. Deviation from this ethos would render us indistinguishable from the commonplace—a prospect we categorically reject.
-                            </p>
-                            <p>
-                                True accomplishment transcends fleeting quarterly milestones; it unfolds over decades of consistent advancement, frequently encompassing multiple generations. Our approach rests on four essential pillars, seamlessly integrating multigenerational planning to safeguard and perpetuate your family&apos;s heritage.
+                                We deliver bespoke counsel that empowers you every step of the way, crafting tailored strategies attuned to your unique objectives for sustained achievement. This guiding ethos sets us apart as your trusted partner in excellence, where true accomplishment unfolds over decades of purposeful advancement—rooted in four essential pillars that integrate multigenerational planning to safeguard and elevate your family&apos;s legacy with confidence and clarity.
                             </p>
                         </div>
                     </div>

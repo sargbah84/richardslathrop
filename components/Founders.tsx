@@ -35,10 +35,10 @@ export default function Founders() {
 
                             <div className="space-y-4 text-gray-600 leading-relaxed">
                                 <p>
-                                    Christian&apos;s path to wealth management began on the football field, where he witnessed firsthand how the people creating the most value often benefit the least. After his NFL career, he started from the bottom—literally going door-to-door with a resume that said little more than &ldquo;Football Player.&rdquo;
+                                    Christian Richards&apos;s dedication to client service and success was forged in a modest upbringing, where his parents, a special education teacher and social services worker, instilled values of community impact through their founding of the Pacoima Wildcats nonprofit. With no family history in finance, Christian prioritized intellectual growth alongside athletic excellence, inspired by his father&apos;s path from sports to a UC Berkeley degree, leading Christian to secure scholarships to top universities like Michigan as a scholar-athlete.
                                 </p>
                                 <p>
-                                    Within 18 months, he earned tax, insurance, and securities licenses. But unlike the advisors who dismissed him as a rookie, Christian never forgot his purpose: to serve those who need help most, not just chase high-net-worth clients.
+                                    His awareness of financial inequities deepened in college and the NFL, observing how many athletes were underserved by profit-driven advisors, fueling his mission to advocate for financial literacy. Starting from a data entry role, he earned licenses and thrived under mentors David Meltzer and Jim Regitz at client-focused firms, embracing low-fee, referral-based models that echoed his parents&apos; service-first philosophy. This journey culminated in founding Richards, Lathrop &amp; Associates in 2026, a boutique firm prioritizing personalized, concierge-level service for enduring client prosperity.
                                 </p>
                                 <Link href="/team/christian-richards" className="inline-block mt-4 px-8 py-4 bg-navy text-white font-medium tracking-wide hover:bg-gold transition-colors rounded-sm">
                                     Read Full Bio
