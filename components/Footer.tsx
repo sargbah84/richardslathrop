@@ -4,12 +4,12 @@ export default function Footer() {
     return (
         <footer className="w-full bg-[#0f1a2e] text-white py-16">
             <div className="container mx-auto px-4 md:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr_1fr_1.5fr] gap-12 mb-12">
                     {/* Column 1: Brand */}
                     <div className="space-y-6">
                         <h4 className="text-gold text-sm font-bold tracking-widest uppercase" style={{ fontFamily: 'Georgia, serif' }}>Richards, Lathrop &amp; Associates</h4>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            An independently owned boutique wealth management firm dedicated to client prosperity above all else. No corporate agendas.
+                            An independently owned boutique wealth management firm dedicated to client prosperity above all else.
                         </p>
                     </div>
 
@@ -43,7 +43,8 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm text-gray-300">
                             <li>Email: <a href="mailto:Info@richardslathrop.com" className="hover:text-gold transition-colors">Info@richardslathrop.com</a></li>
                             <li>Phone: <a href="tel:323-426-7003" className="hover:text-gold transition-colors">323-426-7003</a></li>
-                            <li>Address: 9870 Research Drive<br /><span className="ml-[60px]">Irvine, CA 92618</span></li>
+                            <li className="whitespace-nowrap">9870 Research Drive<br />Irvine, CA 92618</li>
+                            <li className="whitespace-nowrap">6320 Canoga Avenue, Suite 1480<br />Woodland Hills, CA 91367</li>
                         </ul>
                     </div>
                 </div>
