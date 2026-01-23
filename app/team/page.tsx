@@ -1,5 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Our Team",
+    description:
+        "Meet the dedicated professionals at Richards, Lathrop & Associates committed to your financial success, including founders Christian P. Richards III and Michael Lathrop.",
+    openGraph: {
+        title: "Our Team | Richards, Lathrop & Associates",
+        description:
+            "Meet the dedicated professionals at Richards, Lathrop & Associates committed to your financial success.",
+    },
+};
 
 export default function Team() {
     const founders = [

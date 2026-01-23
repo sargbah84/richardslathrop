@@ -15,10 +15,10 @@ export default function Header() {
                 <Link href="/" className="flex items-center">
                     <div className="relative h-14 w-56">
                         <Image
-                            src="/assets/img/logo.png"
+                            src="/assets/img/logo-main.png"
                             alt="Richards, Lathrop &amp; Associates"
                             fill
-                            sizes="224px"
+                            sizes="(max-width: 768px) 224px, 448px"
                             className="object-contain object-left"
                             priority
                         />

@@ -1,4 +1,16 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Our Services",
+    description:
+        "Comprehensive wealth management services including financial planning, investment management, tax optimization, estate planning, asset protection, and philanthropic giving strategies.",
+    openGraph: {
+        title: "Our Services | Richards, Lathrop & Associates",
+        description:
+            "Comprehensive wealth management services including financial planning, investment management, tax optimization, estate planning, and more.",
+    },
+};
 
 export default function Services() {
     const mainService = {

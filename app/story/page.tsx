@@ -1,4 +1,16 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Our Story",
+    description:
+        "Learn why Richards, Lathrop & Associates was founded—to restore client-first values in wealth management with strong relationships, alignment, excellence, and deep technical knowledge.",
+    openGraph: {
+        title: "Our Story | Richards, Lathrop & Associates",
+        description:
+            "Learn why Richards, Lathrop & Associates was founded—to restore client-first values in wealth management.",
+    },
+};
 
 export default function OurStory() {
     const pillars = [
