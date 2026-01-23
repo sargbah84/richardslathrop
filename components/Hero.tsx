@@ -25,7 +25,7 @@ export default function Hero() {
                             Start a Conversation
                         </Link>
                         <Link
-                            href="/story"
+                            href="/#story"
                             className="px-8 py-4 border-2 border-navy text-navy font-medium tracking-wide hover:bg-navy hover:text-white transition-colors text-center rounded-sm"
                         >
                             Read Our Story

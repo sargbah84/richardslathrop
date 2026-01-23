@@ -27,6 +27,7 @@ export default function OriginStory() {
                         </div>
                     </AnimateOnScroll>
 
+                    {/* Hidden for now - Our Story page is temporarily disabled
                     <AnimateOnScroll animation="fadeUp" delay={300}>
                         <div className="text-center">
                             <Link
@@ -37,6 +38,7 @@ export default function OriginStory() {
                             </Link>
                         </div>
                     </AnimateOnScroll>
+                    */}
 
                     {/* Video placeholder - commented out
                     <AnimateOnScroll animation="fadeUp" delay={200}>

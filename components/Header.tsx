@@ -27,7 +27,7 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-8">
-                    <Link href="/story" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
+                    <Link href="/#story" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
                         Our Story
                     </Link>
                     <Link href="/team" className="text-sm font-medium tracking-wide text-navy hover:text-gold transition-colors">
@@ -67,7 +67,7 @@ export default function Header() {
             >
                 <nav className="container mx-auto px-4 py-6 flex flex-col space-y-4">
                     <Link
-                        href="/story"
+                        href="/#story"
                         className="text-base font-medium tracking-wide text-navy hover:text-gold transition-colors py-2"
                         onClick={closeMenu}
                     >

@@ -17,7 +17,7 @@ export default function Footer() {
                     <div className="space-y-6">
                         <h4 className="text-gold text-sm font-bold tracking-widest uppercase">Navigation</h4>
                         <ul className="space-y-3 text-sm text-gray-300">
-                            <li><Link href="/story" className="hover:text-gold transition-colors">Our Story</Link></li>
+                            <li><Link href="/#story" className="hover:text-gold transition-colors">Our Story</Link></li>
                             <li><Link href="/team" className="hover:text-gold transition-colors">Our Team</Link></li>
                             <li><Link href="/#approach" className="hover:text-gold transition-colors">Our Approach</Link></li>
                             <li><Link href="/#contact" className="hover:text-gold transition-colors">Work With Us</Link></li>
