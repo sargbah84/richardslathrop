@@ -85,6 +85,7 @@ export const metadata: Metadata = {
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import FormCRS from "@/components/FormCRS";
+import { Providers } from "@/components/Providers";
 
 export default function RootLayout({
   children,
@@ -96,10 +97,12 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} antialiased font-sans bg-cream text-navy`}
       >
-        <Header />
-        <main className="w-full min-w-full">{children}</main>
-        <Footer />
-        <FormCRS />
+        <Providers>
+          <Header />
+          <main className="w-full min-w-full">{children}</main>
+          <Footer />
+          <FormCRS />
+        </Providers>
       </body>
     </html>
   );
