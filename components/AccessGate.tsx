@@ -115,6 +115,22 @@ export function AccessProvider({ children }: { children: ReactNode }) {
   const [hasAccess, setHasAccess] = useState<boolean | null>(null);
 
   useEffect(() => {
+    // Check for password in query string (e.g., ?public=pre1125)
+    const urlParams = new URLSearchParams(window.location.search);
+    const queryPassword = urlParams.get("public");
+
+    if (queryPassword === ACCESS_PASSWORD) {
+      // Valid password in URL - grant access and clean up the URL
+      localStorage.setItem(STORAGE_KEY, "true");
+      setHasAccess(true);
+
+      // Remove the query param from URL without reload
+      const newUrl = window.location.pathname + window.location.hash;
+      window.history.replaceState({}, "", newUrl);
+      return;
+    }
+
+    // Fall back to checking localStorage
     const stored = localStorage.getItem(STORAGE_KEY);
     setHasAccess(stored === "true");
   }, []);
