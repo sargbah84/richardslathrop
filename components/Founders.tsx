@@ -54,7 +54,7 @@ export default function Founders() {
                             <p className="text-gold font-medium uppercase tracking-widest text-sm mb-6">Chief Investment Officer</p>
 
                             <div className="bg-cream p-6 border-l-4 border-gold mb-6 italic text-gray-600">
-                                &ldquo;We recognize that success is built on the combination of disciplined investment processes that are tailored to fit the specific needs and preferences of clients rather than a detached and distant decisionmaker. While market volatility will remain constant, and one trend gives way to another, we work to provide you with structure and confidence that you will achieve your financial goals.&rdquo;
+                                &ldquo;We recognize that success is built on the combination of disciplined investment processes that are tailored to fit the specific needs and preferences of clients. While market volatility remains a constant, we work to provide you with structure and the confidence that you will achieve your financial goals.&rdquo;
                             </div>
 
                             <div className="space-y-4 text-gray-600 leading-relaxed">

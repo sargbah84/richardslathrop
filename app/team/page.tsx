@@ -127,7 +127,7 @@ export default function Team() {
                         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                             {teamMembers.map((member, index) => (
                                 <div key={index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                                    <div className="relative h-48">
+                                    <div className="relative h-72">
                                         <Image
                                             src={member.image}
                                             alt={member.name}
